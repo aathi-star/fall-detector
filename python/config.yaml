@@ -1,0 +1,16 @@
+mqtt:
+  host: localhost
+  port: 1883
+  topic: iot/falldetector/accel
+  client_id: fall-detector-client
+  keepalive: 60
+model:
+  path: models/fall_detector.joblib
+stream:
+  sample_rate_hz: 25
+  window_seconds: 1.0
+  step_seconds: 0.2
+logic:
+  alert_cooldown_seconds: 10
+logging:
+  dir: logs
